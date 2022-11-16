@@ -12,6 +12,12 @@
     <app-server-element *ngFor="let serverElement of serverElements; let i = index"
     [element]="serverElement"
     [serverCnt] = "i+ ' countIs'"
-    ></app-server-element>
+    >
+      <p>
+        <strong *ngIf="serverElement.type === 'server'" style="color:red;">{{serverElement.content}}</strong>
+        <em *ngIf="serverElement.type === 'blueprint'">{{serverElement.content}}</em>
+      </p>
+      <p>Server Count is {{i}}</p>
+    </app-server-element>
   </div>
 </div>
