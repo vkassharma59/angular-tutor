@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <!-- <app-recipes></app-recipes>
+    <app-shopping-list></app-shopping-list> -->
+    <p>Add New Servers or blueprints</p>
+    <label>Server Name</label>
+    <input type="text" class="form-control" #serverNameInputEle>
+    <br>
+    {{serverNameInputEle.value}}
+    <button class="btn btn-primary" type="button" (click)="onAddServer(serverNameInputEle)">Add Server</button>&nbsp;
+  </div>
+</div>

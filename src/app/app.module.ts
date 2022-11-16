@@ -14,6 +14,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
 import { InputOutputComponent } from './input-output/input-output.component';
 import { CockpitComponent } from './input-output/cockpit/cockpit.component';
 import { ServerElementComponent } from './input-output/server-element/server-element.component';
+import { LocalRefrencesComponent } from './local-refrences/local-refrences.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ServerElementComponent } from './input-output/server-element/server-ele
     ShoppingEditComponent,
     InputOutputComponent,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    LocalRefrencesComponent
    ],
   imports: [
     BrowserModule,
