@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-local-refrences',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LocalRefrencesComponent implements OnInit {
 
+  @ViewChild('serverContentInputEle') serverContentInput: ElementRef;
+
   constructor() { }
 
   ngOnInit(): void {
@@ -14,6 +16,7 @@ export class LocalRefrencesComponent implements OnInit {
 
   onAddServer(serverName: HTMLInputElement){
     console.log(serverName.value)
+    console.log(this.serverContentInput.nativeElement.value)
   }
 
 }

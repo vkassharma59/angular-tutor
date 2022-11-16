@@ -5,8 +5,11 @@
     <p>Add New Servers or blueprints</p>
     <label>Server Name</label>
     <input type="text" class="form-control" #serverNameInputEle>
+
+    <label>Server Content</label>
+    <input type="text" class="form-control" #serverContentInputEle>
     <br>
-    {{serverNameInputEle.value}}
+
     <button class="btn btn-primary" type="button" (click)="onAddServer(serverNameInputEle)">Add Server</button>&nbsp;
   </div>
 </div>
