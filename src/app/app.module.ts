@@ -15,7 +15,10 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { CockpitComponent } from './input-output/cockpit/cockpit.component';
 import { ServerElementComponent } from './input-output/server-element/server-element.component';
 import { LocalRefrencesComponent } from './local-refrences/local-refrences.component';
-
+import { GameControlComponent } from './game-control/game-control.component';
+import { EvenComponent } from './game-control/even/even.component';
+import { OddComponent } from './game-control/odd/odd.component';
+import { GameComponent } from './game-control/game/game.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,11 @@ import { LocalRefrencesComponent } from './local-refrences/local-refrences.compo
     InputOutputComponent,
     CockpitComponent,
     ServerElementComponent,
-    LocalRefrencesComponent
+    LocalRefrencesComponent,
+    GameControlComponent,
+    EvenComponent,
+    OddComponent,
+    GameComponent
    ],
   imports: [
     BrowserModule,

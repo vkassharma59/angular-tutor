@@ -1,0 +1,6 @@
+<app-game (intervalFired)="onInervaleFired($event)"></app-game>
+<app-even *ngFor="let counter of evenNumbers"
+[element] = "counter"></app-even>
+<app-odd *ngFor="let counter of oddNumbers"
+[element] = "counter"></app-odd>
+
