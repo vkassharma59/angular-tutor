@@ -1,10 +1,12 @@
-<app-header></app-header>
+<app-header (navigationCurrentLink)="onNavigationChange($event)"></app-header>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
       <!-- <app-input-output></app-input-output> -->
       <!-- <app-local-refrences></app-local-refrences> -->
-      <app-game-control></app-game-control>
+      <!-- <app-game-control></app-game-control> -->
+      <app-recipes *ngIf="currentPage =='recipes'"></app-recipes>
+      <app-shopping-list *ngIf="currentPage =='shopping-list'"></app-shopping-list>
     </div>
   </div>
 </div>
