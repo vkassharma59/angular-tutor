@@ -10,6 +10,7 @@ import { Component, SimpleChange, ViewEncapsulation } from '@angular/core';
 export class AppComponent {
 
   currentPage: string = 'shopping-list';
+  swithchValue: number = 10;
 
   onNavigationChange(pageName: string){
     this.currentPage = pageName;

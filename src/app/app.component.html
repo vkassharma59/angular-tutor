@@ -4,6 +4,12 @@
     <div class="col-xs-12">
       <h4 addBasicHighlight [defaultColor]="'#e7e7e7'" [highlightedColor]="'#ccc'">Color through custom directive!</h4>
       <p *appUnless="false">1</p>
+      <div class="list-group" [ngSwitch]="swithchValue">
+        <a href="#" class="list-group-item" *ngSwitchCase="5">Five</a>
+        <a href="#" class="list-group-item" *ngSwitchCase="10">Ten</a>
+        <a href="#" class="list-group-item" *ngSwitchCase="15">Fifteen</a>
+        <a href="#" class="list-group-item" *ngSwitchCase="20">Twenty</a>
+      </div>
       <!-- <app-input-output></app-input-output> -->
       <!-- <app-local-refrences></app-local-refrences> -->
       <!-- <app-game-control></app-game-control> -->
