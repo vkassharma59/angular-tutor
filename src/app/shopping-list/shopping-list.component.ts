@@ -6,11 +6,11 @@ import { Ingredient } from '../shared/ingredient.model';
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.css']
 })
+
 export class ShoppingListComponent implements OnInit {
+
   ingredients: Ingredient[] = [
-    new Ingredient('Apples', 10),
-    new Ingredient('Orange', 5),
-    new Ingredient('Tommato', 25)
+    new Ingredient('Apples', 10)
   ];
 
   constructor() { }
@@ -18,4 +18,9 @@ export class ShoppingListComponent implements OnInit {
   ngOnInit() {
   }
 
+  onItemAdded(IngredientData: Ingredient){
+    if(IngredientData.name != '' && IngredientData.amount > 0){
+      this.ingredients.push(IngredientData);
+    }
+  }
 }

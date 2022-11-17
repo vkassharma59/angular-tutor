@@ -9,7 +9,7 @@ import { Component, SimpleChange, ViewEncapsulation } from '@angular/core';
 
 export class AppComponent {
 
-  currentPage: string = 'recipes';
+  currentPage: string = 'shopping-list';
 
   onNavigationChange(pageName: string){
     this.currentPage = pageName;
