@@ -19,8 +19,15 @@ import { GameControlComponent } from './game-control/game-control.component';
 import { EvenComponent } from './game-control/even/even.component';
 import { OddComponent } from './game-control/odd/odd.component';
 import { GameComponent } from './game-control/game/game.component';
+import { ServiceTutorComponent } from './service-tutor/service-tutor.component';
+
 import { BasicHighlightText } from './basic-heighlight-directive/basic-heighlight.directive';
 import { CustomStructuralDirectiveDirective } from './custom-structural-directive/custom-structural-directive.directive';
+import { DropDownDirectiveDirective } from './shared/drop-down-directive.directive';
+import { AccountService } from './shared/account.service';
+import { LoggingService } from './shared/logging.service';
+import { NewAccountComponent } from './service-tutor/new-account/new-account.component';
+import { AccountComponent } from './service-tutor/account/account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,14 +47,18 @@ import { CustomStructuralDirectiveDirective } from './custom-structural-directiv
     OddComponent,
     GameComponent,
     BasicHighlightText,
-    CustomStructuralDirectiveDirective
+    CustomStructuralDirectiveDirective,
+    DropDownDirectiveDirective,
+    ServiceTutorComponent,
+    NewAccountComponent,
+    AccountComponent
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AccountService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

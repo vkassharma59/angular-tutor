@@ -1,0 +1,9 @@
+<div class="list-group">
+  <div class="list-group-item">
+    <a href="#" class="list-group-item-action">{{account.name}}</a>
+    <p>Account current status is: {{account.status}}</p>
+    <button class="btn btn-default" (click)="setStatus('inactive')">Make Inactive</button>&nbsp;
+    <button class="btn btn-default" (click)="setStatus('hidden')">Make Hidden</button>&nbsp;
+    <button class="btn btn-default" (click)="setStatus('active')">Make Active</button>
+  </div>
+</div>

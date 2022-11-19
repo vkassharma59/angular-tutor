@@ -3,8 +3,8 @@
   <div class="row">
     <div class="col-xs-12">
       <h4 addBasicHighlight [defaultColor]="'#e7e7e7'" [highlightedColor]="'#ccc'">Color through custom directive!</h4>
-      <p *appUnless="false">1</p>
-      <div class="list-group" [ngSwitch]="swithchValue">
+      <p *appUnless="true">1</p>
+      <div class="list-group" [ngSwitch]="swithchValue" *ngIf="false">
         <a href="#" class="list-group-item" *ngSwitchCase="5">Five</a>
         <a href="#" class="list-group-item" *ngSwitchCase="10">Ten</a>
         <a href="#" class="list-group-item" *ngSwitchCase="15">Fifteen</a>
@@ -13,8 +13,9 @@
       <!-- <app-input-output></app-input-output> -->
       <!-- <app-local-refrences></app-local-refrences> -->
       <!-- <app-game-control></app-game-control> -->
-      <app-recipes *ngIf="currentPage =='recipes'"></app-recipes>
-      <app-shopping-list *ngIf="currentPage =='shopping-list'"></app-shopping-list>
+      <app-recipes *ngIf="currentPage =='erecipes'"></app-recipes>
+      <app-shopping-list *ngIf="currentPage =='sshopping-list'"></app-shopping-list>
+      <app-service-tutor></app-service-tutor>
     </div>
   </div>
 </div>

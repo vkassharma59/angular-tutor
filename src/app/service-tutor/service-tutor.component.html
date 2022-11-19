@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-xs-12">
+    <app-new-account (addAccountClick)="onAddAccount($event)"></app-new-account>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <app-account
+      *ngFor="let accountItem of account; let i = index;"
+      [account] = accountItem
+      [index] = i
+    ></app-account>
+  </div>
+</div>
+
